@@ -158,9 +158,27 @@
 	 <section class="works">
     <ul>
       <li>
-        <figure class="reveal-effect masker wow"> <a href="#">
+        <figure class="reveal-effect masker wow"> <a href="">
+          <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                var carousel = document.getElementById('carouselExampleControls');
+            
+                // Slide to the next item on mouse enter
+                carousel.addEventListener('mouseenter', function() {
+                    carousel.carouselInterval = setInterval(function() {
+                        var bootstrapCarousel = new bootstrap.Carousel(carousel);
+                        bootstrapCarousel.next();
+                    }, 2000); // Adjust the interval time as needed
+                });
+            
+                // Stop sliding on mouse leave
+                carousel.addEventListener('mouseleave', function() {
+                    clearInterval(carousel.carouselInterval);
+                });
+            });
+            </script>
           
-          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="2000">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img class="d-block w-100" src="images/portfolio/aqar.jpg" alt="First slide">
