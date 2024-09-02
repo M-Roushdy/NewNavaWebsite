@@ -237,7 +237,7 @@
   var mainslider = new Swiper('.gallery-top', {
     spaceBetween: 0,
     autoplay: {
-      delay: 9500,
+      delay: 2000,
       disableOnInteraction: false,
     },
     navigation: {
