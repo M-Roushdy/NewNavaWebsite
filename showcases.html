@@ -289,28 +289,25 @@
           <div id="carouselExampleControls3" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="d-block w-100" src="images/New post/concreto/1.png" alt="First slide">
-              </div>
-              <div class="carousel-item">
                 <img class="d-block w-100" src="images/New post/concreto/2.jpg" alt="First slide">
+              </div> 
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/concreto/3.jpg" alt="First slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="images/New post/concreto/3.jpg" alt="Third slide">
+                <img class="d-block w-100" src="images/New post/concreto/4.jpg" alt="Third slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="images/New post/concreto/4.jpg" alt="Fourth slide">
+                <img class="d-block w-100" src="images/New post/concreto/5.jpg" alt="Fourth slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="images/New post/concreto/5.jpg" alt="Fifth slide">
+                <img class="d-block w-100" src="images/New post/concreto/6.jpg" alt="Fifth slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="images/New post/concreto/5.jpg" alt="Sixth slide">
+                <img class="d-block w-100" src="images/New post/concreto/7.png" alt="Sixth slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="images/New post/concreto/6.jpg" alt="Seventh slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="images/New post/concreto/7.jpg" alt="Eighth slide">
+                <img class="d-block w-100" src="images/New post/concreto/1.png" alt="Seventh slide">
               </div>
             </div>
           </div>
@@ -343,28 +340,25 @@
           <div id="carouselExampleControls4" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="d-block w-100" src="images/New post/el sahel/1.png" alt="First slide">
+                <img class="d-block w-100" src="images/New post/el sahel/5.jpg" alt="First slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="images/New post/el sahel/2.png" alt="First slide">
+                <img class="d-block w-100" src="images/New post/el sahel/6.jpg" alt="First slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="images/New post/el sahel/3.png" alt="Third slide">
+                <img class="d-block w-100" src="images/New post/el sahel/7.jpg" alt="Third slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="images/New post/el sahel/4.png" alt="Fourth slide">
+                <img class="d-block w-100" src="images/New post/el sahel/8.jpg" alt="Fourth slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="images/New post/el sahel/5.png" alt="Fifth slide">
+                <img class="d-block w-100" src="images/New post/el sahel/9.jpg" alt="Fifth slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="images/New post/el sahel/6.png" alt="Sixth slide">
+                <img class="d-block w-100" src="images/New post/el sahel/1.png" alt="Sixth slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="images/New post/el sahel/7.png" alt="Seventh slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="images/New post/el sahel/8.png" alt="Eighth slide">
+                <img class="d-block w-100" src="images/New post/el sahel/2.png" alt="Seventh slide">
               </div>
             </div>
           </div>
@@ -441,16 +435,16 @@
           <div id="carouselExampleControls6" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="d-block w-100" src="images/New post/GPX/1.jpg" alt="First slide">
+                <img class="d-block w-100" src="images/New post/nour misr/1.png" alt="First slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="images/New post/GPX/3.jpg" alt="First slide">
+                <img class="d-block w-100" src="images/New post/nour misr/2.png" alt="First slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="images/New post/GPX/4.jpg" alt="Third slide">
+                <img class="d-block w-100" src="images/New post/nour misr/3.png" alt="Third slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="images/New post/GPX/5.jpg" alt="Fourth slide">
+                <img class="d-block w-100" src="images/New post/nour misr/4.png" alt="Fourth slide">
               </div>
             </div>
           </div>
@@ -461,21 +455,126 @@
         <!-- end caption --> 
       </li>
       <li>
-        <figure class="reveal-effect masker wow"> <a href="#"><img src="images/portfolio/adam.jpg" alt="Image"></a> </figure>
+        <figure class="reveal-effect masker wow"> 
+          <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                var carousel = document.getElementById('carouselExampleControls7');
+            
+                // Slide to the next item on mouse enter
+                carousel.addEventListener('mouseenter', function() {
+                    carousel.carouselInterval = setInterval(function() {
+                        var bootstrapCarousel = new bootstrap.Carousel(carousel);
+                        bootstrapCarousel.next();
+                    }, 1000); // Adjust the interval time as needed
+                });
+            
+                // Stop sliding on mouse leave
+                carousel.addEventListener('mouseleave', function() {
+                    clearInterval(carousel.carouselInterval);
+                });
+            });
+            </script>  
+          <div id="carouselExampleControls7" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="images/New post/Adam travel/1.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/Adam travel/3.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/Adam travel/4.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/Adam travel/5.jpg" alt="Fourth slide">
+              </div>
+            </div>
+          </div>
+        </figure>
         <div class="caption wow" data-splitting>
           <h3>Adam Travel</h3>
           <small>Social Media Management - 2022</small> </div>
         <!-- end caption --> 
       </li>
       <li>
-        <figure class="reveal-effect masker wow"> <a href="#"><img src="images/portfolio/egytai.jpg" alt="Image"> </a></figure>
+        <figure class="reveal-effect masker wow"> 
+          <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                var carousel = document.getElementById('carouselExampleControls8');
+            
+                // Slide to the next item on mouse enter
+                carousel.addEventListener('mouseenter', function() {
+                    carousel.carouselInterval = setInterval(function() {
+                        var bootstrapCarousel = new bootstrap.Carousel(carousel);
+                        bootstrapCarousel.next();
+                    }, 1000); // Adjust the interval time as needed
+                });
+            
+                // Stop sliding on mouse leave
+                carousel.addEventListener('mouseleave', function() {
+                    clearInterval(carousel.carouselInterval);
+                });
+            });
+            </script>  
+          <div id="carouselExampleControls8" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="images/New post/egytai/1.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/egytai/3.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/egytai/4.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/egytai/5.jpg" alt="Fourth slide">
+              </div>
+            </div>
+          </div>
+        </figure>
         <div class="caption wow" data-splitting>
           <h3>Egythai</h3>
           <small>Social Media Management - 2023</small> </div>
         <!-- end caption --> 
       </li>
       <li>
-        <figure class="reveal-effect masker wow"> <a href="#"><img src="images/portfolio/classybadr.png" alt="Image"> </a></figure>
+        <figure class="reveal-effect masker wow"> 
+          <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                var carousel = document.getElementById('carouselExampleControls9');
+            
+                // Slide to the next item on mouse enter
+                carousel.addEventListener('mouseenter', function() {
+                    carousel.carouselInterval = setInterval(function() {
+                        var bootstrapCarousel = new bootstrap.Carousel(carousel);
+                        bootstrapCarousel.next();
+                    }, 1000); // Adjust the interval time as needed
+                });
+            
+                // Stop sliding on mouse leave
+                carousel.addEventListener('mouseleave', function() {
+                    clearInterval(carousel.carouselInterval);
+                });
+            });
+            </script>  
+          <div id="carouselExampleControls9" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="images/New post/Classy badr/1.gif" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/Classy badr/2.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/Classy badr/3.png" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/Classy badr/4.png" alt="Fourth slide">
+              </div>
+            </div>
+          </div>
+        </figure>
         <div class="caption wow" data-splitting>
           <h3>Classy Badr Tours</h3>
           <small>Social Media Management - 2023</small> </div>
@@ -483,7 +582,45 @@
       </li>
 
       <li>
-        <figure class="reveal-effect masker wow"> <a href="#"><img src="images/portfolio/aash.JPG" alt="Image"> </a></figure>
+        <figure class="reveal-effect masker wow"> 
+          <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                var carousel = document.getElementById('carouselExampleControls10');
+            
+                // Slide to the next item on mouse enter
+                carousel.addEventListener('mouseenter', function() {
+                    carousel.carouselInterval = setInterval(function() {
+                        var bootstrapCarousel = new bootstrap.Carousel(carousel);
+                        bootstrapCarousel.next();
+                    }, 1000); // Adjust the interval time as needed
+                });
+            
+                // Stop sliding on mouse leave
+                carousel.addEventListener('mouseleave', function() {
+                    clearInterval(carousel.carouselInterval);
+                });
+            });
+            </script>  
+          <div id="carouselExampleControls10" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="images/New post/AASH/1.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/AASH/2.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/AASH/3.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/AASH/4.jpg" alt="Fourth slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/AASH/5.jpg" alt="Fourth slide">
+              </div>
+            </div>
+          </div>
+        </figure>
         <div class="caption wow" data-splitting>
           <h3>AASH Travel</h3>
           <small>Social media management - 2023</small> </div>
@@ -491,7 +628,51 @@
       </li>
 
       <li>
-        <figure class="reveal-effect masker wow"> <a href="#"><img src="images/portfolio/traveldot.png" alt="Image"> </a></figure>
+        <figure class="reveal-effect masker wow"> 
+          <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                var carousel = document.getElementById('carouselExampleControls11');
+            
+                // Slide to the next item on mouse enter
+                carousel.addEventListener('mouseenter', function() {
+                    carousel.carouselInterval = setInterval(function() {
+                        var bootstrapCarousel = new bootstrap.Carousel(carousel);
+                        bootstrapCarousel.next();
+                    }, 1000); // Adjust the interval time as needed
+                });
+            
+                // Stop sliding on mouse leave
+                carousel.addEventListener('mouseleave', function() {
+                    clearInterval(carousel.carouselInterval);
+                });
+            });
+            </script>  
+          <div id="carouselExampleControls11" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="images/New post/travel dot/1.png" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/travel dot/2.png" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/travel dot/3.png" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/travel dot/4.png" alt="Fourth slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/travel dot/5.png" alt="Fifth slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/travel dot/6.png" alt="Sixth slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/travel dot/7.png" alt="Seventh slide">
+              </div>
+            </div>
+          </div>
+        </figure>
         <div class="caption wow" data-splitting>
           <h3>Travel.</h3>
           <small>Social media management - 2023</small> </div>
@@ -499,39 +680,210 @@
       </li>
 
       <li>
-        <figure class="reveal-effect masker wow"> <a href="#"><img src="images/portfolio/elsabah.png" alt="Image"> </a></figure>
-        <div class="caption wow" data-splitting>
+        <figure class="reveal-effect masker wow"> 
+          <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                var carousel = document.getElementById('carouselExampleControls12');
+            
+                // Slide to the next item on mouse enter
+                carousel.addEventListener('mouseenter', function() {
+                    carousel.carouselInterval = setInterval(function() {
+                        var bootstrapCarousel = new bootstrap.Carousel(carousel);
+                        bootstrapCarousel.next();
+                    }, 1000); // Adjust the interval time as needed
+                });
+            
+                // Stop sliding on mouse leave
+                carousel.addEventListener('mouseleave', function() {
+                    clearInterval(carousel.carouselInterval);
+                });
+            });
+            </script>  
+          <div id="carouselExampleControls12" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="images/New post/el sabah/1.png" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/el sabah/2.png" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/el sabah/3.png" alt="Third slide">
+              </div>
+            </div>
+          </div>
+        </figure>
+      <div class="caption wow" data-splitting>
           <h3>Elsabah Travel </h3>
           <small>Social media management - 2023</small> </div>
         <!-- end caption --> 
       </li>
 
       <li>
-        <figure class="reveal-effect masker wow"> <a href="#"><img src="images/portfolio/munchies.jpg" alt="Image"> </a></figure>
-        <div class="caption wow" data-splitting>
+        <figure class="reveal-effect masker wow"> 
+          <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                var carousel = document.getElementById('carouselExampleControls13');
+            
+                // Slide to the next item on mouse enter
+                carousel.addEventListener('mouseenter', function() {
+                    carousel.carouselInterval = setInterval(function() {
+                        var bootstrapCarousel = new bootstrap.Carousel(carousel);
+                        bootstrapCarousel.next();
+                    }, 1000); // Adjust the interval time as needed
+                });
+            
+                // Stop sliding on mouse leave
+                carousel.addEventListener('mouseleave', function() {
+                    clearInterval(carousel.carouselInterval);
+                });
+            });
+            </script>  
+          <div id="carouselExampleControls13" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="images/New post/munchies/1.png" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/munchies/2.png" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/munchies/3.png" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/munchies/4.png" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/munchies/5.png" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/munchies/6.png" alt="Third slide">
+              </div>
+            </div>
+          </div>
+        </figure>        
+      <div class="caption wow" data-splitting>
           <h3>Munchies</h3>
           <small>Social media management – Photography – Web Development - 2023</small> </div>
         <!-- end caption --> 
       </li>
 
       <li>
-        <figure class="reveal-effect masker wow"> <a href="#"><img src="images/portfolio/munchies.jpg" alt="Image"> </a></figure>
+        <figure class="reveal-effect masker wow"> 
+          <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                var carousel = document.getElementById('carouselExampleControls14');
+            
+                // Slide to the next item on mouse enter
+                carousel.addEventListener('mouseenter', function() {
+                    carousel.carouselInterval = setInterval(function() {
+                        var bootstrapCarousel = new bootstrap.Carousel(carousel);
+                        bootstrapCarousel.next();
+                    }, 1000); // Adjust the interval time as needed
+                });
+            
+                // Stop sliding on mouse leave
+                carousel.addEventListener('mouseleave', function() {
+                    clearInterval(carousel.carouselInterval);
+                });
+            });
+            </script>  
+          <div id="carouselExampleControls14" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="images/New post/oro/1.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/oro/2.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/oro/3.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/oro/4.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/oro/5.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/oro/6.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/oro/7.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/oro/8.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/oro/9.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/oro/10.jpg" alt="Third slide">
+              </div>
+            </div>
+          </div>
+        </figure>           
         <div class="caption wow" data-splitting>
-          <h3>Bashayer Elsham</h3>
-          <small>Social media management – Photography - 2023</small> </div>
+          <h3>Oro Store</h3>
+          <small>Social media management – Photography - Web Development - 2024</small> </div>
         <!-- end caption --> 
       </li>
 
       <li>
-        <figure class="reveal-effect masker wow"> <a href="#"><img src="images/portfolio/bashayr.jpg" alt="Image"> </a></figure>
-        <div class="caption wow" data-splitting>
-          <h3>Bashayer Elsham</h3>
-          <small>Social media management – Photography - 2023</small> </div>
-        <!-- end caption --> 
-      </li>
-
-      <li>
-        <figure class="reveal-effect masker wow"> <a href="#"><img src="images/portfolio/bashayr.jpg" alt="Image"> </a></figure>
+        <figure class="reveal-effect masker wow"> 
+          <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                var carousel = document.getElementById('carouselExampleControls15');
+            
+                // Slide to the next item on mouse enter
+                carousel.addEventListener('mouseenter', function() {
+                    carousel.carouselInterval = setInterval(function() {
+                        var bootstrapCarousel = new bootstrap.Carousel(carousel);
+                        bootstrapCarousel.next();
+                    }, 1000); // Adjust the interval time as needed
+                });
+            
+                // Stop sliding on mouse leave
+                carousel.addEventListener('mouseleave', function() {
+                    clearInterval(carousel.carouselInterval);
+                });
+            });
+            </script>  
+          <div id="carouselExampleControls15" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="images/New post/saturn/1.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/saturn/2.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/saturn/3.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/saturn/4.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/saturn/5.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/saturn/6.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/saturn/7.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/saturn/8.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/saturn/9.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/saturn/10.jpg" alt="Third slide">
+              </div>
+            </div>
+          </div>
+        </figure>          
         <div class="caption wow" data-splitting>
           <h3>Saturn Travel</h3>
           <small>Social media management – 2023</small> </div>
@@ -539,15 +891,60 @@
       </li>
 
       <li>
-        <figure class="reveal-effect masker wow"> <a href="#"><img src="images/portfolio/saturn.jpg" alt="Image"> </a></figure>
-        <div class="caption wow" data-splitting>
-          <h3>Saturn Travel</h3>
-          <small>Social media management – 2023</small> </div>
-        <!-- end caption --> 
-      </li>
-
-      <li>
-        <figure class="reveal-effect masker wow"> <a href="#"><img src="images/portfolio/elray2.jpg" alt="Image"> </a></figure>
+        <figure class="reveal-effect masker wow"> 
+          <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                var carousel = document.getElementById('carouselExampleControls16');
+            
+                // Slide to the next item on mouse enter
+                carousel.addEventListener('mouseenter', function() {
+                    carousel.carouselInterval = setInterval(function() {
+                        var bootstrapCarousel = new bootstrap.Carousel(carousel);
+                        bootstrapCarousel.next();
+                    }, 1000); // Adjust the interval time as needed
+                });
+            
+                // Stop sliding on mouse leave
+                carousel.addEventListener('mouseleave', function() {
+                    clearInterval(carousel.carouselInterval);
+                });
+            });
+            </script>  
+          <div id="carouselExampleControls16" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="images/New post/pizza" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/saturn/2.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/saturn/3.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/saturn/4.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/saturn/5.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/saturn/6.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/saturn/7.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/saturn/8.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/saturn/9.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/New post/saturn/10.jpg" alt="Third slide">
+              </div>
+            </div>
+          </div>
+        </figure>           
         <div class="caption wow" data-splitting>
           <h3>Pizza Elrayek</h3>
           <small>Social media management – Photography – 2024</small> </div>
